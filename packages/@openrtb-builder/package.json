@@ -4,7 +4,8 @@
   "description": "TypeScript builder library for constructing OpenRTB 2.6 bid requests and responses.",
   "scripts": {
     "build": "tsup",
-    "test": "vitest"
+    "test": "vitest",
+    "lint": "tsc --noEmit --excludeFiles \"**/*.test.ts\""
   },
   "keywords": [
     "TypeScript",

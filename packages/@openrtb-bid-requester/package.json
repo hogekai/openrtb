@@ -4,7 +4,8 @@
   "description": "TypeScript bid requester library compliant with OpenRTB 2.5/2.6/3.0",
   "scripts": {
     "build": "tsup",
-    "test": "vitest"
+    "test": "vitest",
+    "lint": "tsc --excludeFiles \"**/*.test.ts\""
   },
   "keywords": [
     "TypeScript",
