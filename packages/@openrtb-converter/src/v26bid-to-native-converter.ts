@@ -20,8 +20,8 @@ import type {
 } from "iab-native/v12";
 import type { LinkResponse } from "iab-native";
 
-export class V26BidToNativeConverter implements Converter<Bid, Native> {
-  public to(from: Bid): Native {
+export class V26BidToNativeConverter implements Converter<Partial<Bid>, Native> {
+  public to(from: Partial<Bid>): Native {
     const nativeResponse: NativeResponse = JSON.parse(from.adm || "{}");
     return {
       link: this.convertLink(nativeResponse.link),
@@ -30,7 +30,7 @@ export class V26BidToNativeConverter implements Converter<Bid, Native> {
     };
   }
 
-  public from(to: Native): Bid {
+  public from(to: Native): Partial<Bid> {
     if (!to?.link) {
       throw new Error("Link is required.");
     }

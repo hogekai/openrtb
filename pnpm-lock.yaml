@@ -59,6 +59,9 @@ importers:
       iab-openrtb:
         specifier: ^1
         version: 1.0.1
+      uuid:
+        specifier: ^11.1.0
+        version: 11.1.0
 
   packages/@openrtb-macro-replacer:
     dependencies:

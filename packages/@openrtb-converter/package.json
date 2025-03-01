@@ -29,9 +29,9 @@
   ],
   "bugs": "https://github.com/nextadjs/openrtb.git/issues",
   "peerDependencies": {
-    "iab-openrtb": "^1",
     "iab-adcom": "^1",
-    "iab-native": "^1"
+    "iab-native": "^1",
+    "iab-openrtb": "^1"
   },
   "exports": {
     ".": {
@@ -48,5 +48,8 @@
         "types": "./dist/index.d.ts"
       }
     }
+  },
+  "dependencies": {
+    "uuid": "^11.1.0"
   }
 }

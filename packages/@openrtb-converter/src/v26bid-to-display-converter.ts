@@ -3,9 +3,9 @@ import type { Converter } from "./converter";
 import type { Bid as V26Bid } from "iab-openrtb/v26";
 
 export class V26BidToDisplayConverter
-  implements Converter<Omit<V26Bid, "id" | "impid" | "price">, Display>
+  implements Converter<Partial<V26Bid>, Display>
 {
-  public to(from: V26Bid) {
+  public to(from: Partial<V26Bid>) {
     return {
       api: from.apis?.[0],
       w: from.w,
