@@ -1,6 +1,6 @@
 {
   "name": "@openrtb/converter",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "TypeScript converter library compliant with OpenRTB 2.6/3.0 and AdCOM 1.0 and Native-Ad 1.2",
   "scripts": {
     "build": "tsup",
