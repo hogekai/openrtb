@@ -1,0 +1,59 @@
+{
+  "name": "@openrtb/builder",
+  "version": "0.1.0",
+  "description": "TypeScript builder library for constructing OpenRTB 2.6 bid requests and responses.",
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest"
+  },
+  "keywords": [
+    "TypeScript",
+    "Bid Requester",
+    "OpenRTB",
+    "OpenRTB v2.6"
+  ],
+  "author": "Kai Miyamoto",
+  "license": "MIT",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/nextadjs/openrtb.git",
+    "directory": "packages/@openrtb-builder"
+  },
+  "files": [
+    "./dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "bugs": "https://github.com/nextadjs/openrtb.git/issues",
+  "peerDependencies": {
+    "iab-openrtb": "^1"
+  },
+  "dependencies": {
+    "uuid": "^11.1.0"
+  },
+  "exports": {
+    ".": {
+      "import": "./src/index.ts",
+      "types": "./src/index.ts"
+    },
+    "./v26": {
+      "import": "./src/v26/index.ts",
+      "types": "./src/v26/index.ts"
+    }
+  },
+  "publishConfig": {
+    "access": "public",
+    "exports": {
+      ".": {
+        "import": "./dist/index.mjs",
+        "require": "./dist/index.js",
+        "types": "./dist/index.d.ts"
+      },
+      "./v26": {
+        "import": "./dist/v26/index.mjs",
+        "require": "./dist/v26/index.js",
+        "types": "./dist/v26/index.d.ts"
+      }
+    }
+  }
+}
