@@ -24,6 +24,15 @@ importers:
         specifier: ^3.0.7
         version: 3.0.7(@types/node@22.13.7)
 
+  packages/@openrtb-auction:
+    dependencies:
+      '@openrtb/macro-replacer':
+        specifier: workspace:*
+        version: link:../@openrtb-macro-replacer
+      iab-openrtb:
+        specifier: ^1
+        version: 1.0.1
+
   packages/@openrtb-bid-requester:
     dependencies:
       iab-openrtb:
