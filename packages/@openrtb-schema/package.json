@@ -4,7 +4,6 @@
   "description": "TypeScript zod schema for OpenRTB v2.6",
   "scripts": {
     "build": "tsup",
-    "test": "vitest",
     "lint": "tsc --excludeFiles \"**/*.test.ts\""
   },
   "keywords": [
