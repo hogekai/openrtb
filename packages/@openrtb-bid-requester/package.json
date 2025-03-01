@@ -1,11 +1,19 @@
 {
   "name": "@openrtb/bid-requester",
-  "version": "0.0.0",
-  "description": "",
+  "version": "0.1.0",
+  "description": "TypeScript bid requester library compliant with OpenRTB 2.5/2.6/3.0",
   "scripts": {
-    "build": "tsup"
+    "build": "tsup",
+    "test": "vitest"
   },
-  "keywords": [],
+  "keywords": [
+    "TypeScript",
+    "Bid Requester",
+    "OpenRTB",
+    "OpenRTB v2.5",
+    "OpenRTB v2.6",
+    "OpenRTB v3.0"
+  ],
   "author": "Kai Miyamoto",
   "license": "MIT",
   "repository": {
@@ -18,5 +26,8 @@
     "LICENSE",
     "README.md"
   ],
-  "bugs": "https://github.com/nextadjs/openrtb.git/issues"
+  "bugs": "https://github.com/nextadjs/openrtb.git/issues",
+  "peerDependencies": {
+    "iab-openrtb": "^1"
+  }
 }
