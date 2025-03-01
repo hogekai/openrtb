@@ -1,0 +1,53 @@
+{
+  "name": "@openrtb/converter",
+  "version": "0.1.0",
+  "description": "TypeScript converter library compliant with OpenRTB 2.6/3.0 and AdCOM 1.0 and Native-Ad 1.2",
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest",
+    "lint": "tsc --excludeFiles \"**/*.test.ts\""
+  },
+  "keywords": [
+    "TypeScript",
+    "Converter",
+    "OpenRTB",
+    "Native-Ad",
+    "AdCOM",
+    "OpenRTB v2.6",
+    "OpenRTB v3.0"
+  ],
+  "author": "Kai Miyamoto",
+  "license": "MIT",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/nextadjs/openrtb.git",
+    "directory": "packages/@openrtb-converter"
+  },
+  "files": [
+    "./dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "bugs": "https://github.com/nextadjs/openrtb.git/issues",
+  "peerDependencies": {
+    "iab-openrtb": "^1",
+    "iab-adcom": "^1",
+    "iab-native": "^1"
+  },
+  "exports": {
+    ".": {
+      "import": "./src/index.ts",
+      "types": "./src/index.ts"
+    }
+  },
+  "publishConfig": {
+    "access": "public",
+    "exports": {
+      ".": {
+        "import": "./dist/index.mjs",
+        "require": "./dist/index.js",
+        "types": "./dist/index.d.ts"
+      }
+    }
+  }
+}
