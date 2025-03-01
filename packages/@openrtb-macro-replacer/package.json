@@ -1,0 +1,49 @@
+{
+  "name": "@openrtb/macro-replacer",
+  "version": "0.1.0",
+  "description": "TypeScript macro replacer library compliant with OpenRTB 2.6/3.0",
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest",
+    "lint": "tsc --excludeFiles \"**/*.test.ts\""
+  },
+  "keywords": [
+    "TypeScript",
+    "Bid Requester",
+    "OpenRTB",
+    "OpenRTB v2.6",
+    "OpenRTB v3.0"
+  ],
+  "author": "Kai Miyamoto",
+  "license": "MIT",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/nextadjs/openrtb.git",
+    "directory": "packages/@openrtb-macro-replacer"
+  },
+  "files": [
+    "./dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "bugs": "https://github.com/nextadjs/openrtb.git/issues",
+  "peerDependencies": {
+    "iab-openrtb": "^1"
+  },
+  "exports": {
+    ".": {
+      "import": "./src/index.ts",
+      "types": "./src/index.ts"
+    }
+  },
+  "publishConfig": {
+    "access": "public",
+    "exports": {
+      ".": {
+        "import": "./dist/index.mjs",
+        "require": "./dist/index.js",
+        "types": "./dist/index.d.ts"
+      }
+    }
+  }
+}
