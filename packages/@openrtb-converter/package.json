@@ -4,7 +4,6 @@
   "description": "TypeScript converter library compliant with OpenRTB 2.6/3.0 and AdCOM 1.0 and Native-Ad 1.2",
   "scripts": {
     "build": "tsup",
-    "test": "vitest",
     "lint": "tsc --excludeFiles \"**/*.test.ts\""
   },
   "keywords": [
